@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutUtama"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- ===== 1. kartu profil ===== -->
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/desc_avatar"
+            android:src="@drawable/avatar_1" />
+
+        <TextView
+            android:id="@+id/tvNamaKartu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/nama_default"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvEmailKartu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/email_default"
+            android:textSize="14sp" />
+
+        <!-- ======== LATIHAN 2: TAMPILKAN KOTA DI KARTU ======== -->
+        <TextView
+            android:id="@+id/tvKotaKartu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#6B6B6B"
+            android:textSize="13sp" />
+
+        <!-- ===== 2. form isian ===== -->
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:hint="@string/label_nama"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/label_email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etBio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/label_bio"
+            android:inputType="textMultiLine"
+            android:maxLines="3" />
+
+        <!-- ======== LATIHAN 2: KOTA ======== -->
+        <EditText
+            android:id="@+id/etKota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/label_kota"
+            android:inputType="textCapWords" />
+
+        <Button
+            android:id="@+id/btnGantiAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/btn_ganti_avatar" />
+
+        <!-- ===== 3. sakelar mode gelap ===== -->
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swGelap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/label_mode_gelap" />
+
+        <!-- ===== 4. tombol aksi ===== -->
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/btn_simpan" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_reset" />
+
+        <!-- ======== LATIHAN 1: NAMA PANGGILAN ======== -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Latihan: Nama Panggilan"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etPanggilan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama panggilan" />
+
+        <Button
+            android:id="@+id/btnSimpanPanggilan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan Panggilan" />
+
+        <TextView
+            android:id="@+id/tvPanggilan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="Belum ada nama panggilan"
+            android:textColor="#2563eb" />
+
+        <TextView
+            android:id="@+id/tvJumlahBuka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#6B6B6B"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>
